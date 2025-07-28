@@ -1,0 +1,278 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('images/cora.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.logueo {
+  max-width: 550px;
+  margin: 250px auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: rgba(101, 24, 139, 0.85);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s;
+  color: #ffffff;
+}
+
+.principal {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('images/20.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+
+.landing {
+  opacity: 0;
+  transition: opacity 0.5s;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+input[type="password"] {
+  width: 40%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #7c3aed;
+  border-radius: 4px;
+  background: #2d0036;
+  color: #fff;
+}
+
+input[type="password"]::placeholder {
+  color: #b39ddb;
+}
+
+button {
+padding: 0.5rem 1.5rem;
+background: #7c3aed;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1rem;
+transition: background 0.3s;
+}
+
+button:hover {background: #4b006e;
+}
+
+#error {
+  margin-top: 1rem;
+  color: #ff6b81;
+}
+
+.seccion {
+  background: rgba(79, 4, 117, 0.85);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  scroll-margin-top: 100px;
+  padding: 3rem 1rem;
+}
+
+.seccion h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+
+.contenido-seccion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+  width: 100%;
+  max-width: 1300px;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.contenido-seccion > div,
+.contenido-seccion > p {
+  flex: 1 1 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+.img-smile,
+.img-happy,
+.img-mensaje {
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-smile {
+  width: 600px;
+  height: 600px;
+}
+
+.img-happy {
+  margin-right: 2rem;
+}
+.img-happy:last-child {
+  margin-right: 0;
+}
+.fila-img-happy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.img-happy,
+.img-mensaje {
+  width: 220px;
+  height: 320px;
+}
+
+.img-smile:hover,
+.img-happy:hover,
+.img-mensaje:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 28px rgba(255, 255, 255, 0.12);
+}
+
+.lista-momentos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto 2rem;
+}
+
+.momento {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  font-size: 1.6rem;
+}
+
+.momento img,
+.momento video {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  background: #000;
+}
+
+.momento p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #fff;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .momento {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .momento img {
+    width: 90%;
+    height: auto;
+  }
+
+  .momento p {
+    font-size: 1rem;
+  }
+}
+
+.lista-cualidades {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.lista-cualidades li::before {
+  content: "💖 ";
+}
+
+.mensaje p {
+  font-size: 1.3rem;
+  text-align: center;
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+  height: 100%;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .contenido-seccion {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .img-smile,
+  .img-happy,
+  .img-mensaje,
+  .galeria-momentos img {
+    width: 90%;
+    height: auto;
+  }
+
+  .contenido-seccion > div {
+    text-align: center;
+    align-items: center;
+  }
+
+  .mensaje p {
+    font-size: 1.1rem;
+  }
+}
